@@ -15,4 +15,11 @@ The objective is a simple contacts management app, with SMS messaging. This was 
 - Dedicated intents to easily write an email/start a call
 
 ## Gallery
-![HomeScreen](/screenshots/1-HomeScreen.png)
+<img src="https://github.com/vischlum/ft_hangouts/blob/master/screenshots/1-HomeScreen.png" height="400">
+<img src="https://github.com/vischlum/ft_hangouts/blob/master/screenshots/2-SearchSort.png" height="400">
+<img src="https://github.com/vischlum/ft_hangouts/blob/master/screenshots/3-ContactDetails.png" height="400">
+<img src="https://github.com/vischlum/ft_hangouts/blob/master/screenshots/4-ContactDetailsLandscape.png" height="200">
+<img src="https://github.com/vischlum/ft_hangouts/blob/master/screenshots/5-SettingsSolarizedLight.png" height="200">
+<img src="https://github.com/vischlum/ft_hangouts/blob/master/screenshots/6-CameraPermissions.png" height="200">
+<img src="https://github.com/vischlum/ft_hangouts/blob/master/screenshots/7-Messaging.png" height="400">
+<img src="https://github.com/vischlum/ft_hangouts/blob/master/screenshots/8-NewContact.png" height="400">
