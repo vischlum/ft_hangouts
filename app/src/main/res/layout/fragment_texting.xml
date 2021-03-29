@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.texting.ContactsTextingFragment">
+
+    <ListView
+        android:id="@+id/texting_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/contact_texting_writing_zone"
+        android:layout_alignParentStart="true"
+        android:divider="@null"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/contact_texting_writing_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/contact_texting_write"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".90"
+            android:gravity="top"
+            android:hint="@string/contacts_texting_write"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:maxLines="3" />
+
+        <ImageButton
+            android:id="@+id/contact_texting_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight=".10"
+            android:contentDescription="@string/contacts_texting_send"
+            android:src="@drawable/ic_send" />
+    </LinearLayout>
+
+</RelativeLayout>

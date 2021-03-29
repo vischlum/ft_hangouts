@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_contacts_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/contacts_menu_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:icon="@drawable/ic_sort_by_alpha"
+        android:title="@string/contacts_menu_sort"
+        app:showAsAction="ifRoom">
+
+        <menu>
+
+            <item
+                android:id="@+id/action_contacts_sort_by_name"
+                android:title="@string/contacts_menu_sort_by_name" />
+
+            <item
+                android:id="@+id/action_contacts_sort_by_name_reverse"
+                android:title="@string/contacts_menu_sort_by_name_reverse" />
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/action_contacts_show_only_fav"
+        android:checkable="true"
+        android:title="@string/contacts_menu_show_only_fav"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_contacts_show_settings"
+        android:title="@string/contacts_menu_show_settings"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Contacts42</string>
+    <string name="title_contacts">Contacts</string>
+
+    <!--    Contacts-->
+    <string name="contact_picture">Picture of the contact</string>
+    <string name="contact_favorite">Favorite contact</string>
+    <string name="contact_name_hint">Name of the contact</string>
+    <string name="contact_phone">Phone numbers</string>
+    <string name="contact_phone_home">Phone number (home)</string>
+    <string name="contact_phone_work">Phone number (work)</string>
+    <string name="contact_phone_write">Write a text</string>
+    <string name="contact_phone_call">Call</string>
+    <string name="contact_email">Email addresses</string>
+    <string name="contact_email_home">Email address (home)</string>
+    <string name="contact_email_work">Email address (work)</string>
+    <string name="contact_email_write">Write an email</string>
+    <string name="contact_fab_add">Add new contact</string>
+    <string name="contact_fab_edit">Edit contact</string>
+    <string name="contact_fab_save">Save contact</string>
+    <string name="contacts_delete">Delete contact</string>
+    <string name="contacts_undo">Undo</string>
+    <string name="contacts_menu_search">Search</string>
+    <string name="contacts_menu_sort">Sort</string>
+    <string name="contacts_menu_sort_by_name">Sort by name</string>
+    <string name="contacts_menu_sort_by_name_reverse">Sort by name (reverse)</string>
+    <string name="contacts_menu_show_only_fav">Show only favorites</string>
+    <string name="contacts_menu_show_settings">Settings</string>
+    <string name="contacts_add">New contact</string>
+    <string name="contacts_edit">Edit contact</string>
+    <string name="contacts_empty_name">Name cannot be empty</string>
+    <string name="contacts_added">Contact added</string>
+    <string name="contacts_edited">Contact updated</string>
+    <string name="contacts_view">View contact</string>
+    <string name="contact_picture_add">Add a picture for this contact</string>
+    <string-array name="contact_picture_source">
+        <item>Take a picture with the camera</item>
+        <item>Choose a picture from the gallery</item>
+    </string-array>
+    <string name="contacts_permission_fix">Fix it</string>
+    <string name="contacts_camera_permission_denied">Camera permission denied</string>
+    <string name="contacts_camera_permission_denied_permanent">Camera permission is required.</string>
+    <string name="contacts_storage_permission_denied">Storage permission denied</string>
+    <string name="contacts_storage_permission_denied_permanent">Storage permission is required.</string>
+    <string name="contacts_sms_permission_denied_permanent">SMS permission is required.</string>
+    <string name="contacts_texting_write">Write a SMS</string>
+    <string name="contacts_texting_send">Send the SMS</string>
+
+    <!--    Settings-->
+    <string name="settings_title">Settings</string>
+    <string name="settings_choose_theme">Choose theme</string>
+    <string name="settings_enable_snackbar">Enable snackbar</string>
+    <string name="settings_enable_snackbar_summary">The snackbar displays the time when the app was set in the background.</string>
+    <string-array name="Themes">
+        <item>Default (Purple/Teal)</item>
+        <item>Orange/Green</item>
+        <item>Solarized Light</item>
+        <item>Solarized Dark</item>
+        <item>OLED</item>
+    </string-array>
+    <string-array name="ThemesValues">
+        <item>purple_teal</item>
+        <item>orange_green</item>
+        <item>solarized_light</item>
+        <item>solarized_dark</item>
+        <item>oled</item>
+    </string-array>
+
+</resources>

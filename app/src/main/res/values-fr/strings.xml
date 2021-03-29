@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Contacts42</string>
+    <string name="title_contacts">Contacts</string>
+
+    <!--    Contacts-->
+    <string name="contact_picture">Image du contact</string>
+    <string name="contact_favorite">Contact favori</string>
+    <string name="contact_name_hint">Nom du contact</string>
+    <string name="contact_phone">Numéros de téléphone</string>
+    <string name="contact_phone_home">Numéro de téléphone (perso)</string>
+    <string name="contact_phone_work">Numéro de téléphone (pro)</string>
+    <string name="contact_phone_write">Écrire un SMS</string>
+    <string name="contact_phone_call">Appeller</string>
+    <string name="contact_email">Adresses courriel</string>
+    <string name="contact_email_home">Adresse courriel (perso)</string>
+    <string name="contact_email_work">Adresse courriel (pro)</string>
+    <string name="contact_email_write">Écrire un courriel</string>
+    <string name="contact_fab_add">Ajouter un nouveau contact</string>
+    <string name="contact_fab_edit">Modifier le contact</string>
+    <string name="contact_fab_save">Enregistrer le contact</string>
+    <string name="contacts_delete">Supprimer le contact</string>
+    <string name="contacts_undo">Annuler</string>
+    <string name="contacts_menu_search">Rechercher</string>
+    <string name="contacts_menu_sort">Trier</string>
+    <string name="contacts_menu_sort_by_name">Trier par nom</string>
+    <string name="contacts_menu_sort_by_name_reverse">Trier par nom (inversé)</string>
+    <string name="contacts_menu_show_only_fav">Ne montrer que les favoris</string>
+    <string name="contacts_menu_show_settings">Paramètres</string>
+    <string name="contacts_add">Nouveau contact</string>
+    <string name="contacts_edit">Modifier le contact</string>
+    <string name="contacts_empty_name">Le nom ne peut être vide</string>
+    <string name="contacts_added">Contact ajouté</string>
+    <string name="contacts_edited">Contact modifié</string>
+    <string name="contacts_view">Voir le contact</string>
+    <string name="contact_picture_add">Ajouter une image pour ce contact</string>
+    <string-array name="contact_picture_source">
+        <item>Prendre une photo avec l\'appareil</item>
+        <item>Choisir une image dans le téléphone</item>
+    </string-array>
+    <string name="contacts_permission_fix">Corriger</string>
+    <string name="contacts_camera_permission_denied">Autorisation « Appareil photo » refusée</string>
+    <string name="contacts_camera_permission_denied_permanent">L\'autorisation « Appareil photo » est nécessaire.</string>
+    <string name="contacts_storage_permission_denied">Autorisation « Fichiers » refusée</string>
+    <string name="contacts_storage_permission_denied_permanent">L\'autorisation « Fichiers » est nécessaire.</string>
+    <string name="contacts_sms_permission_denied_permanent">L\'autorisation « SMS » est nécessaire.</string>
+    <string name="contacts_texting_write">Écrire un SMS</string>
+    <string name="contacts_texting_send">Envoyer le SMS</string>
+
+    <!--    Settings-->
+    <string name="settings_title">Paramètres</string>
+    <string name="settings_choose_theme">Choisir le thème</string>
+    <string name="settings_enable_snackbar">Activer la snackbar</string>
+    <string name="settings_enable_snackbar_summary">La snackbar affiche la date depuis laquelle l\'application a été mise en tâche de fond.</string>
+    <string-array name="Themes">
+        <item>Défaut (Violet/Bleu)</item>
+        <item>Orange/Vert</item>
+        <item>Solarized Clair</item>
+        <item>Solarized Sombre</item>
+        <item>OLED</item>
+    </string-array>
+    <string-array name="ThemesValues">
+        <item>purple_teal</item>
+        <item>orange_green</item>
+        <item>solarized_light</item>
+        <item>solarized_dark</item>
+        <item>oled</item>
+    </string-array>
+
+</resources>

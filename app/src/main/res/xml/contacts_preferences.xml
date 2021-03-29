@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListPreference
+        android:entries="@array/Themes"
+        android:entryValues="@array/ThemesValues"
+        android:key="current_theme"
+        android:title="@string/settings_choose_theme"
+        app:useSimpleSummaryProvider="true" />
+
+    <SwitchPreferenceCompat
+        android:key="enable_snackbar_when_paused"
+        android:summary="@string/settings_enable_snackbar_summary"
+        android:title="@string/settings_enable_snackbar" />
+
+</PreferenceScreen>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.ViewContactFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/contact_view_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/contact_picture"
+                android:adjustViewBounds="true"
+                android:maxHeight="160dp"
+                android:src="@drawable/ic_person" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="8dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/contact_view_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_weight="9"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginHorizontal="8dp"
+                    tools:text="@string/contact_name_hint" />
+
+                <CheckBox
+                    android:id="@+id/contact_view_fav"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:enabled="false"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contact_view_phone_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingVertical="16dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/contact_phone"
+                    android:src="@drawable/ic_contact_phone" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/contact_view_phone_home_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/contact_view_phone_home"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="18"
+                            android:gravity="center_vertical"
+                            app:drawableStartCompat="@drawable/ic_home"
+                            tools:text="@string/contact_phone_home" />
+
+                        <ImageButton
+                            android:id="@+id/contact_view_phone_home_sms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/contact_phone_write"
+                            android:src="@drawable/ic_texts" />
+
+                        <ImageButton
+                            android:id="@+id/contact_view_phone_home_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/contact_phone_call"
+                            android:src="@drawable/ic_calls" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contact_view_phone_work_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/contact_view_phone_work"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="18"
+                            android:gravity="center_vertical"
+                            app:drawableStartCompat="@drawable/ic_work"
+                            tools:text="@string/contact_phone_work" />
+
+                        <ImageButton
+                            android:id="@+id/contact_view_phone_work_sms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/contact_phone_write"
+                            android:src="@drawable/ic_texts" />
+
+                        <ImageButton
+                            android:id="@+id/contact_view_phone_work_call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/contact_phone_call"
+                            android:src="@drawable/ic_calls" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contact_view_email_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingVertical="16dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/contact_email"
+                    android:src="@drawable/ic_contact_email" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/contact_view_email_home_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/contact_view_email_home"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="19"
+                            android:gravity="center_vertical"
+                            app:drawableStartCompat="@drawable/ic_home"
+                            tools:text="@string/contact_email_home" />
+
+                        <ImageButton
+                            android:id="@+id/contact_view_email_home_send"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/contact_email_write"
+                            android:src="@drawable/ic_email" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contact_view_email_work_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/contact_view_email_work"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="19"
+                            android:gravity="center_vertical"
+                            app:drawableStartCompat="@drawable/ic_work"
+                            tools:text="@string/contact_email_work" />
+
+                        <ImageButton
+                            android:id="@+id/contact_view_email_work_send"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/contact_email_write"
+                            android:src="@drawable/ic_email" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="64dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/fab_edit_contact"
+        android:layout_gravity="bottom|end"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/contact_fab_edit"
+        android:src="@drawable/ic_edit" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

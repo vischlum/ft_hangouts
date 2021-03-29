@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_contacts">
+
+    <fragment
+        android:id="@+id/navigation_contacts"
+        android:name="com.example.contacts42.ui.ContactsFragment"
+        android:label="@string/title_contacts"
+        tools:layout="@layout/fragment_contacts">
+        <action
+            android:id="@+id/action_navigation_contacts_to_addEditContactFragment"
+            app:destination="@id/addEditContactFragment" />
+        <action
+            android:id="@+id/action_navigation_contacts_to_viewContactFragment"
+            app:destination="@id/viewContactFragment" />
+        <action
+            android:id="@+id/action_navigation_contacts_to_contactsSettingsFragment"
+            app:destination="@id/contactsSettingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewContactFragment"
+        android:name="com.example.contacts42.ui.view.ViewContactFragment"
+        android:label="@string/contacts_view"
+        tools:layout="@layout/fragment_view_contact">
+        <argument
+            android:name="contact"
+            app:argType="com.example.contacts42.data.Contact" />
+        <action
+            android:id="@+id/action_viewContactFragment_to_addEditContactFragment"
+            app:destination="@id/addEditContactFragment" />
+        <action
+            android:id="@+id/action_viewContactFragment_to_contactsTextingFragment"
+            app:destination="@id/contactsTextingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditContactFragment"
+        android:name="com.example.contacts42.ui.addedit.AddEditContactFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_add_edit_contact">
+        <argument
+            android:name="contact"
+            android:defaultValue="@null"
+            app:argType="com.example.contacts42.data.Contact"
+            app:nullable="true" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/contactsSettingsFragment"
+        android:name="com.example.contacts42.ui.settings.ContactsSettingsFragment"
+        android:label="@string/settings_title"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/contactsTextingFragment"
+        android:name="com.example.contacts42.ui.texting.ContactsTextingFragment"
+        android:label="{phoneNumber}"
+        tools:layout="@layout/fragment_texting">
+        <argument
+            android:name="phoneNumber"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

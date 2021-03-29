@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="sms_background_radius">12dp</dimen>
+    <dimen name="sms_item_margin">8dp</dimen>
+</resources>
